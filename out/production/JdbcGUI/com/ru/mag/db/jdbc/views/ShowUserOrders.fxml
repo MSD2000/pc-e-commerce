@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ru.mag.db.jdbc.controllers.ShowUserOrders">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Customer:" />
+      <ChoiceBox fx:id="cbCustomers" layoutX="78.0" layoutY="10.0" onAction="#cbCustomers_Changed" prefWidth="150.0" />
+      <TableView fx:id="tvProducts" layoutX="9.0" layoutY="45.0" prefHeight="346.0" prefWidth="582.0">
+        <columns>
+          <TableColumn prefWidth="33.0" text="№" />
+          <TableColumn prefWidth="162.0" text="Name" />
+            <TableColumn prefWidth="143.0" text="Model" />
+            <TableColumn prefWidth="100.0" text="Price" />
+            <TableColumn prefWidth="62.0" text="Quantity" />
+            <TableColumn prefWidth="81.0" text="SubTotal" />
+        </columns>
+      </TableView>
+      <Label layoutX="468.0" layoutY="14.0" text="Total price:" />
+      <Label fx:id="lblTotalPrice" layoutX="538.0" layoutY="15.0" text="00.00" />
+      <Label layoutX="238.0" layoutY="14.0" text="Orders:" />
+      <ChoiceBox fx:id="cbOrders" layoutX="286.0" layoutY="11.0" onAction="#cbOrders_Changed" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ru.mag.db.jdbc.controllers.AddNewCategoryDialog">
+   <children>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="109.0" text="New category name:" />
+      <TextField fx:id="txtNewCategoryName" layoutX="129.0" layoutY="11.0" prefHeight="25.0" prefWidth="200.0" promptText="New category name..." />
+      <Button fx:id="btnSaveNewCategory" layoutX="287.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnSaveNewCategory_Click" text="Save" />
+      <Button fx:id="btnCancelDialog" layoutX="225.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnCancelDialog_Click" text="Cancel" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

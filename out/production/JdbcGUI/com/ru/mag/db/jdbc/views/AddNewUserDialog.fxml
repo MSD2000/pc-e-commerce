@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ru.mag.db.jdbc.controllers.AddNewUserDialog">
+   <children>
+      <Label layoutX="10.0" layoutY="11.0" text="Names:" />
+      <Label layoutX="10.0" layoutY="42.0" text="Email:" />
+      <Label layoutX="10.0" layoutY="74.0" text="Password:" />
+      <PasswordField fx:id="txtPassword" layoutX="70.0" layoutY="70.0" promptText="Password..." />
+      <TextField fx:id="txtEmail" layoutX="70.0" layoutY="38.0" promptText="john_doe@mail.com" />
+      <TextField fx:id="txtUserNames" layoutX="70.0" layoutY="7.0" promptText="John Doe" />
+      <TabPane fx:id="tcUserType" layoutX="10.0" layoutY="104.0" prefHeight="200.0" prefWidth="210.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Employee">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" text="Role:" />
+                        <Label layoutX="10.0" layoutY="35.0" text="Hire date:" />
+                        <TextField fx:id="txtRole" layoutX="71.0" layoutY="6.0" prefWidth="125.0" promptText="Administrator, Moderator..." />
+                        <DatePicker fx:id="dpHireDate" layoutX="71.0" layoutY="31.0" prefHeight="25.0" prefWidth="125.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Customer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="9.0" layoutY="10.0" text="Phone num:" />
+                        <Label layoutX="9.0" layoutY="34.0" text="Country:" />
+                        <Label layoutX="9.0" layoutY="60.0" text="District:" />
+                        <Label layoutX="9.0" layoutY="84.0" text="Place:" />
+                        <Label layoutX="9.0" layoutY="108.0" text="ZIP Code:" />
+                        <Label layoutX="10.0" layoutY="131.0" text="Full location:" />
+                        <TextField fx:id="txtFullLocation" layoutX="82.0" layoutY="129.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="txtPhoneNumber" layoutX="82.0" layoutY="9.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="txtCountry" layoutX="82.0" layoutY="33.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="txtDistrict" layoutX="82.0" layoutY="57.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="txtPlace" layoutX="82.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="txtZIPCode" layoutX="82.0" layoutY="105.0" prefHeight="25.0" prefWidth="120.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btnSaveNewUser" layoutX="175.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnSaveNewUser_Click" text="Save" />
+      <Button fx:id="btnCancelDialog" layoutX="114.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnCancelDialog_Click" text="Cancel" />
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

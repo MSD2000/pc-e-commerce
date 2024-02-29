@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="170.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ru.mag.db.jdbc.controllers.AddNewPromocodeDialog">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="150.0" text="New promocode name:" />
+      <Label layoutX="14.0" layoutY="43.0" prefHeight="25.0" prefWidth="150.0" text="Discount percentage:" />
+      <Label layoutX="14.0" layoutY="72.0" prefHeight="25.0" prefWidth="150.0" text="Start date:" />
+      <Label layoutX="14.0" layoutY="100.0" prefHeight="25.0" prefWidth="150.0" text="End date:" />
+      <TextField fx:id="txtNewPromocodeName" layoutX="152.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" promptText="New promocode name..." />
+      <TextField fx:id="txtDiscountPercentage" layoutX="152.0" layoutY="43.0" prefHeight="25.0" prefWidth="200.0" promptText="Discount percentage..." />
+      <DatePicker fx:id="dpStartDate" layoutX="152.0" layoutY="72.0" prefHeight="25.0" prefWidth="200.0" />
+      <DatePicker fx:id="dpEndDate" layoutX="152.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="btnSaveNewPromocode" layoutX="310.0" layoutY="134.0" onAction="#btnSaveNewPromocode_Click" mnemonicParsing="false" text="Save" />
+      <Button fx:id="btnCancelDialog" layoutX="248.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnCancelDialog_Click" text="Cancel" />
+   </children>
+</AnchorPane>

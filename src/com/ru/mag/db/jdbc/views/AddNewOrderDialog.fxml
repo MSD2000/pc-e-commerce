@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="497.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ru.mag.db.jdbc.controllers.AddNewOrderDialog">
+   <children>
+      <Label layoutX="14.0" layoutY="458.0" prefHeight="25.0" text="Total price:" />
+      <Button fx:id="btnSaveNewOrder" layoutX="365.0" layoutY="458.0" mnemonicParsing="false" onAction="#btnSaveNewOrder_Click" text="Save" />
+      <Button fx:id="btnCancelDialog" layoutX="303.0" layoutY="458.0" mnemonicParsing="false" onAction="#btnCancelDialog_Click" text="Cancel" />
+      <Label layoutX="14.0" layoutY="14.0" prefWidth="100.0" text="Customer:" />
+      <Label layoutX="14.0" layoutY="50.0" prefWidth="100.0" text="Promo-code:" />
+      <ChoiceBox fx:id="cbCustomers" layoutX="121.0" layoutY="10.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="cbPromocodes" layoutX="121.0" layoutY="46.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="86.0" prefWidth="100.0" text="Payment method:" />
+      <ChoiceBox fx:id="cbPaymentMethods" layoutX="121.0" layoutY="82.0" prefWidth="150.0" />
+      <TableView fx:id="tvProducts" layoutX="12.0" layoutY="149.0" prefHeight="299.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="colProductID" prefWidth="37.0" text="№" />
+          <TableColumn fx:id="colProductName" prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="colModelName" prefWidth="105.0" text="Model" />
+            <TableColumn fx:id="colPrice" prefWidth="56.0" text="Price" />
+            <TableColumn fx:id="colQuantity" text="Quantity" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="121.0" prefWidth="100.0" text="Product:" />
+      <ChoiceBox fx:id="cbProducts" layoutX="120.0" layoutY="117.0" prefWidth="150.0" />
+      <Button fx:id="btnAddProduct" layoutX="381.0" layoutY="117.0" mnemonicParsing="false" onAction="#btnAddProduct_Click" text="+" />
+      <Label fx:id="lblTotalPrice" layoutX="85.0" layoutY="463.0" text="00.00" />
+      <TextField fx:id="txtQuantity" layoutX="281.0" layoutY="117.0" prefHeight="25.0" prefWidth="87.0" promptText="Quantity" />
+   </children>
+</AnchorPane>
